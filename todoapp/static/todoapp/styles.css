@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(231, 247, 255);
+}
+
+.Heading {
+  width: 50%;
+  height: 50px;
+  padding: 5px 20px 20px 20px;
+  margin-top: 20vh;
+  margin-left: 20vw;
+  text-align: center;
+  border: solid 0.3px rgb(90, 142, 177);
+  box-shadow: rgb(90, 142, 177);
+  background-color: white;
+}
+
+.Heading h1 {
+  font-weight: lighter;
+  color: darkblue;
+}
+
+.listings {
+  width: 50%;
+  height: fit-content;
+  padding: 20px;
+  margin-left: 20vw;
+  border: solid 0.3px rgb(90, 142, 177);
+  box-shadow: rgb(90, 142, 177);
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+.displaylist {
+  width: 50%;
+  height: fit-content;
+  padding: 20px;
+  margin-left: 20vw;
+  border: solid 0.3px rgb(90, 142, 177);
+  box-shadow: rgb(90, 142, 177);
+  background-color: white;
+}
+
+.todo_list {
+  height: 30px;
+  padding: 5px 0px 5px 5px;
+  background-color: rgb(231, 247, 255);
+  font-size: 23px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 7% 65% 25%;
+  grid-gap: 5px;
+  align-items: center;
+}
+.task {
+  margin-left: 20px;
+}
+.inputbox {
+  width: 30%;
+  height: 30px;
+}
+.add {
+  background-color: darkblue;
+  color: white;
+  height: 35px;
+  border-style: none;
+}
+
+.checked {
+}
+
+.done_btn {
+  margin-left: 30px;
+}

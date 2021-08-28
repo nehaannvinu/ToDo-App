@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(231, 247, 255);
+}
+
+.Heading {
+  width: 50%;
+  height: 50px;
+  padding: 5px 20px 20px 20px;
+  margin-top: 20vh;
+  margin-left: 20vw;
+  text-align: center;
+  border: solid 0.3px rgb(90, 142, 177);
+  box-shadow: rgb(90, 142, 177);
+  background-color: white;
+}
+
+.Heading h1 {
+  font-weight: lighter;
+  color: darkblue;
+}
+
+.listings {
+  width: 50%;
+  height: fit-content;
+  padding: 20px;
+  margin-left: 20vw;
+  border: solid 0.3px rgb(90, 142, 177);
+  box-shadow: rgb(90, 142, 177);
+  background-color: cornflowerblue;
+}
+
+.displaylist {
+  width: 50%;
+  height: fit-content;
+  margin-left: 20vw;
+  border: solid 0.3px rgb(90, 142, 177);
+  box-shadow: rgb(90, 142, 177);
+  background-color: white;
+}
+
+.todo_list {
+  background-color: grey;
+}
+
+.inputbox {
+  width: 30%;
+  height: 30px;
+}
+.add {
+  background-color: darkblue;
+  color: white;
+  height: 35px;
+  border-style: none;
+}

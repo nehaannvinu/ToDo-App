@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="{% static 'todoapp/styles.css' %}">
+</head>
+<body>
+    <div class="Heading">
+        <h1>TO DO LIST</h1>
+    </div>
+    <div class="listings">
+        <form action="{% url 'insert_todo' %}" method="POST" autocomplete="off">
+            {% csrf_token %}
+            <input type="text" class="inputbox" name="content">
+            <button type="submit" class="add">Add task</button>
+        </form>
+    </div>
+    <div class="displaylist">
+            <ul style="list-style-type: none;">
+                {% for todo in all_items %}
+                <div class="todo_list" style="text-align: left;" >
+                    <div class="checked">
+                        <input type="checkbox" />
+                    </div>
+                    <div class="task">
+                        <li>{{todo.content}}</li>
+                    </div>
+                    <div class="done_btn">
+                        <form action="{% url 'delete_todo' todo.id %}" method="POST">
+                            {% csrf_token %}
+                            <button type="submit">Delete</button>
+                        </form>
+                    </div>
+                </div>
+                {% endfor %}
+            </ul>
+    </div>
+    </body>
+</html>
